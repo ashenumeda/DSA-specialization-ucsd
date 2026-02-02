@@ -26,4 +26,4 @@ offered by the University of California San Diego.
 - Build a solid foundation for advanced computer science topics
 
 ## Related Repositories
-- Interview-focused DSA practice: [learn-dsa](https://github.com/ashenumeda/learn-DSA.git)
+- DSA practice: [learn-dsa](https://github.com/ashenumeda/learn-DSA.git)
