@@ -10,12 +10,23 @@ using std::string;
 string largest_number(vector<string> a) {
   //write your code here
   std::stringstream ret;
-  for (size_t i = 0; i < a.size(); i++) {
-    ret << a[i];
+
+  while (a.size() > 0) {
+
+    int max_index = 0;
+
+    for (size_t i = 0; i < a.size(); i++) {
+      if (std::stoi(a[i] + a[max_index]) > std::stoi(a[max_index] + a[i])) {
+        max_index = i;
+      }
+    }
+    ret << a[max_index];
+    a.erase(a.begin() + max_index);
   }
+
   string result;
   ret >> result;
-  return result;
+  return result;  
 }
 
 int main() {
